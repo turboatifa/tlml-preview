@@ -1,171 +1,212 @@
-# 📝 TLML Syntax Reference
+# TLML — Syntax Reference ✨📄
 
-**TLML (Turbo Lightweight Markup Language)** — lightweight markup made simple. 🌟
-All TLML files convert to HTML automatically. 🚀
-
----
-
-## 1️⃣ Headings
-
-Use slashes to define heading levels:
-
-```tlml
-/ Heading 1      → <h1>
-// Heading 2     → <h2>
-/// Heading 3    → <h3>
-```
-
-> **Example:**
-
-```tlml
-/ Welcome to TLML
-// Features
-/// Advanced Tips
-```
+This file documents **TLML (Turbo Lightweight Markup Language)** syntax rules and examples. 🚀 Designed to be simple, expressive, and web-friendly — TLML focuses on easy conversion to HTML and other export formats. 🌐
 
 ---
 
-## 2️⃣ Text Formatting ✨
+## 📑 Table of Contents
 
-| Syntax         | Result                    |
-| -------------- | ------------------------- |
-| `%bold%`       | **Bold text**             |
-| `^italic^`     | *Italic text*             |
-| `` `inline` `` | `Inline code`             |
-| `,code,`       | `Monospace / inline code` |
+1. 🔠 Headings
+2. ✍️ Paragraphs and line breaks
+3. 🎨 Inline formatting (bold, italic, monospace, colors)
+4. 📋 Lists (unordered & ordered)
+5. 💬 Blockquotes
+6. 💻 Code blocks & syntax highlighting
+7. 📊 Tables
+8. 🖼️ Links, images, audio & video (media)
+9. 📂 Collapsible sections
+10. 📝 Comments
+11. 🔖 Footnotes
+12. 🧩 Special blocks / fallback rule
 
-> **Example:**
+---
 
-```tlml
-This is %bold% and ^italic^ text with `inline` code.
+## 1. 🔠 Headings
+
+Use leading slashes to indicate heading level. One slash = H1, two = H2, three = H3.
+
+```
+/ This is H1
+// This is H2
+/// This is H3
 ```
 
 ---
 
-## 3️⃣ Lists 🗂️
+## 2. ✍️ Paragraphs and line breaks
 
-### Unordered List
+A blank line separates paragraphs. To force a single-line break inside a paragraph, end the line with two spaces.
 
-```tlml
-* Item 1
-* Item 2
-_ Item 3
 ```
+This is a paragraph.  
+This is the same paragraph but on the next line.
 
-### Ordered List
-
-```tlml
-1. First
-2. Second
-3. Third
-```
-
-> Nesting not yet supported (planned for future updates).
-
----
-
-## 4️⃣ Tables 📊
-
-Use pipes `|` to define tables:
-
-```tlml
-| Name | Age | City |
-| John | 20  | NYC  |
-| Anna | 25  | LA   |
-```
-
-* Each row starts and ends with `|`
-* Cells are separated by `|`
-* TLML automatically converts it to `<table>` in HTML
-
----
-
-## 5️⃣ Collapsible Sections ➡️
-
-Use `++` to start and end collapsible sections:
-
-```tlml
-++ Section Title
-This content will be hidden until expanded.
-++
-```
-
-* HTML `<details>` and `<summary>` tags are generated automatically.
-
----
-
-## 6️⃣ Colors 🎨
-
-Wrap text in `[color]`...`[/]` for colored text:
-
-```tlml
-[red]Red Text[/]
-[blue]Blue Text[/]
-[#ff9900]Orange Text[/]
-```
-
-* Supports color names, hex codes, and `rgb()`/`rgba()` values.
-* HTML `<span style="color:...">` is used.
-
----
-
-## 7️⃣ Images 🖼️
-
-Syntax:
-
-```tlml
-![Alt Text](path/to/image.png)
-```
-
-* Path can be relative or absolute.
-* Maximum width automatically set to 100% for responsive display.
-
-> **Example:**
-
-```tlml
-![Hello Kitty](assets/hello-kitty.png)
+This starts a new paragraph.
 ```
 
 ---
 
-## 8️⃣ Inline Links 🔗
+## 3. 🎨 Inline formatting
 
-Currently TLML converts links as plain HTML anchor tags:
+**Bold**: wrap text with percent signs.
 
-```tlml
-[Google](https://www.google.com)
+```
+%bold text%
 ```
 
-* Converts to: `<a href="https://www.google.com">Google</a>`
+**Italic**: wrap text with carets.
+
+```
+^italic text^
+```
+
+**Monospace / inline code**: use commas with backtick style.
+
+```
+`,code,`
+```
+
+**Colors**: add `[color]` before the element.
+
+```
+[red] Red text
+[green]%bold green text%
+```
+
+**Font size**:
+
+```
+[size=20px] Big text here
+```
 
 ---
 
-## 9️⃣ Code Blocks 💻
+## 4. 📋 Lists
 
-Use triple backticks for multi-line code:
-
-```tlml
-```
-
-function hello() {
-console.log("Hello TLML!");
-}
+**Unordered lists**:
 
 ```
+_ Item one
+_ Item two
 ```
 
-* TLML converts it to `<pre><code>` in HTML.
-* Syntax highlighting is up to HTML/CSS styling.
+**Ordered lists**:
+
+```
+1 First item
+2 Second item
+```
+
+Nested:
+
+```
+_ Parent
+  _ Child
+    _ Grandchild
+```
 
 ---
 
-## 🔟 Notes & Limitations ⚠️
+## 5. 💬 Blockquotes
 
-* TLML **currently only converts to HTML**.
-* PDF, DOCX, or EPUB exports are not supported yet.
-* Nesting of lists, tables inside collapsible sections, and advanced features may be limited.
-* TLML is beginner-friendly and simple: write, preview, export.
+```
+* This is a quote *
+```
 
 ---
 
-**💡 Tip:** Use VS Code TLML Preview extension to live-preview your TLML file while editing.
+## 6. 💻 Code blocks & syntax highlighting
+
+````
+```python
+print("Hello TLML")
+```
+````
+
+Inline: `,inline code,`
+
+---
+
+## 7. 📊 Tables
+
+```
+/table
+| Name | Age |
+| Ali  | 13  |
+| Sara | 14  |
+/end
+```
+
+---
+
+## 8. 🖼️ Media
+
+**Links**: `[Click here](https://example.com)`
+**Image**: `![Alt](url)`
+**Audio**: `[audio](url.mp3)` 🎵
+**Video**: `[video](url.mp4)` 🎬
+
+---
+
+## 9. 📂 Collapsible sections
+
+```
+/collapse Title
+Hidden content here...
+/endcollapse
+```
+
+---
+
+## 10. 📝 Comments
+
+```
+: This line won’t show
+```
+
+---
+
+## 11. 🔖 Footnotes
+
+```
+Here is a note[1].
+
+[1]: This is the footnote.
+```
+
+---
+
+## 12. 🧩 Fallback rule
+
+Unknown lines are treated as paragraphs. Exporters should safely render or ignore unknown tags.
+
+---
+
+## 🌟 Quick TLML Example
+
+```
+/ TLML Quick Example
+%Bold% and ^italic^ and `,inline,` all work!
+
+/table
+| Key | Value |
+| TLML | Markup |
+/end
+
+_ List item
+  _ Nested item
+
+/collapse More info
+Extra hidden text here!
+/endcollapse
+```
+
+---
+
+## ✅ Notes for developers
+
+* 🎨 Colors accept both names and hex.
+* 🎵 Media placeholders let you add assets later.
+* 🔒 Exporters should sanitize input.
+
+✨ That’s it — TLML is lightweight, fun, and ready to use! 🚀
