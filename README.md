@@ -20,10 +20,17 @@ It’s perfect for documentation, articles, novels, notes, and more.
 
 - [Getting Started](./GETTING_STARTED.md)
 - [Syntax Reference](./SYNTAX.md)
-- [Examples](./EXAMPLES.md)
 - [FAQ](./FAQ.md)
 
 ---
+
+## preview 
+
+## 🎥 Demo Video
+
+Watch the TLML demo on [YouTube](https://www.youtube.com/watch?v=cL9elQpWLI4)
+
+
 
 ## 📜 License
 
