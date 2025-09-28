@@ -2,7 +2,7 @@
 
 ## Welcome to TLML Example Article
 
-This is an example article written in **TLML (Turbo Lightweight Markup Language)**. It demonstrates *all major features* including headings, formatting, lists, tables, collapsible sections, colors, images, links, and code blocks. 🚀
+This is an example article written in **TLML**. It demonstrates *all major features* including headings, formatting, lists, tables, collapsible sections, colors, images, links, and code blocks. 🚀
 
 ### Why TLML?
 
