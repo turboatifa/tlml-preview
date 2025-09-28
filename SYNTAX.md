@@ -1,6 +1,6 @@
 # TLML — Syntax Reference ✨📄
 
-This file documents **TLML (Turbo Lightweight Markup Language)** syntax rules and examples. 🚀 Designed to be simple, expressive, and web-friendly — TLML focuses on easy conversion to HTML and other export formats. 🌐
+This file documents **TLML (TLML (Text Layout Markup Language)
 
 ---
 
