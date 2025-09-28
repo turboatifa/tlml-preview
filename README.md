@@ -1,5 +1,7 @@
 # 🚀 TLML (Turbo Lightweight Markup Language)
 
+![TLML Preview Screenshot](https://copilot.microsoft.com/th/id/BCO.8afa690a-70a4-4567-92c1-af7d64706ba9.png)
+
 **TLML — Lightweight markup made simple, built with passion!** ✨  
 
 TLML is a custom **lightweight markup language** that converts to **HTML**.  
@@ -36,9 +38,10 @@ Just open any TLML file → click **Preview** → see the rendered HTML instantl
 ---
 
 ## 🎥 Demo Video
+## 🎥 Demo Video
 
 Watch TLML in action on YouTube:  
-👉 [TLML Demo](https://www.youtube.com/watch?v=cL9elQpWLI4)  
+[![TLML Demo](https://img.youtube.com/vi/cL9elQpWLI4/0.jpg)](https://www.youtube.com/watch?v=cL9elQpWLI4)
 
 ---
 
@@ -57,4 +60,4 @@ Coming next:
 
 ## 📜 License
 
-Released under the **MIT License**.  
+Released under the **MIT licence **
