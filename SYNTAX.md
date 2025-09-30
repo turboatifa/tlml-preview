@@ -1,6 +1,4 @@
-# TLML — Syntax Reference ✨📄
-
-This file documents **TLML (TLML (Text Layout Markup Language)
+# TLML — Syntax Reference ✨
 
 ---
 
