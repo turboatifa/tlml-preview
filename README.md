@@ -1,4 +1,4 @@
-# 🚀 TLML (TLML (Text Layout Markup Language)
+# 🚀 TLML (TLML (turbo lightweight markup language)
 
 ![TLML Preview Screenshot](https://copilot.microsoft.com/th/id/BCO.8afa690a-70a4-4567-92c1-af7d64706ba9.png)
 
